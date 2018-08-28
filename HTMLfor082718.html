@@ -6,28 +6,37 @@
 </head>
 <body>
 
-<!-- HTML Comment as reference -->
+<!-- Various Notes:
 
+If you have the JavaScript within the body, it is runtime
+
+
+
+-->
 <h1>WDV221</h1>
 
 <p>Welcome to<script>document.write(" WDV221")</script></p>
 
+<!--This is where we are changing the name from the script down below -->
 <h2 id = "test">2nd Example</h2>
 
 <script>
+
     //Write to the document itself
     document.write("<p><strong>New Paragraph</strong></strong></p>");
 
     //Send an alert to the user
-    //window.alert("Hello");
+    //window.alert("Hello there!");
 
     //Another way to send an alert to the user
-    //alert("Wes Brown");
+    //alert("I am Wes Brown");
 
     //Write to the console
     console.log("Put this text in the log.");
+
 </script>
 
+<!--This script will change the h2 above -->
 <script>document.getElementById("test").innerHTML = "Dynamically Updated";</script>
 
 </body>
