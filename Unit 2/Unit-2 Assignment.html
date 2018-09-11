@@ -34,16 +34,31 @@ body {background-color:#FC6;
 <p>4. Define a Numeric variable called courseGrade. Do not give it a value.</p>
 <p>5. Define a Boolean variable called courseCompleted. Give it a value of false.</p>
 <p>Display the value of all the variables in their own paragraphs below. </p>
-<p>Display the number of characters in the course name.</p>
-<p>Display the course name as all uppercase letters.</p>
-<p>Using the String Object determine if the course name contains the letters WDV?  Look at the String methods. Does one or more of them look inside the variable for specific content?</p>
+<p>6. Display the number of characters in the course name.</p>
+<p>7. Display the course name as all uppercase letters.</p>
+<p>8. Using the String Object determine if the course name contains the letters WDV?  Look at the String methods. Does one or more of them look inside the variable for specific content?</p>
 
-<!-- Elements for Display -->
-<p id="schoolName"></p>
-<p id="courseName"></p>
-<p id="testScore"></p>
-<p id="courseGrade"></p>
-<p id="courseComplete"></p>
+<div>
+    <!-- Elements for Display for 1 through 8 -->
+    <!-- Number 1 Display -->
+    <p id="schoolName"></p>
+
+    <!-- Number 2 Display -->
+    <p id="courseName"></p>
+
+    <!-- Number 3 Display -->
+    <p id="testScore"></p>
+
+    <!-- Number 4 Display -->
+    <p id="courseGrade"></p>
+
+    <!-- Number 5 Display -->
+    <p id="courseComplete"></p>
+
+    <!-- Number 6 Display -->
+    <p id="courseNameLen"></p>
+
+</div>
 
 <script>
 
@@ -66,6 +81,10 @@ body {background-color:#FC6;
     //Number 5
     var courseComplete = false;
     document.getElementById("courseComplete").innerHTML = courseComplete;
+
+    //Number 6
+    var courseNameLen = courseName.length;
+    document.getElementById("courseNameLen").innerHTML = courseNameLen;
 
 </script>
 
