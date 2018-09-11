@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Ran Wei and Wes Brown -->
+
+    <meta charset="UTF-8">
+    <title>In Class Assignment</title>
+</head>
+<body>
+
+<h1 id="welcomeStatement"></h1>
+<h2>Settings</h2>
+
+<script>
+
+    var name = getName("first");
+    var wins = 0;
+
+    document.getElementById("welcomeStatement").innerHTML = "Welcome, " + name;
+    console.log("You have " + wins + " wins.");
+
+    function getName(){
+        return prompt("What is your name?", "John Doe");
+    }
+
+    document.write("<select>");
+    document.write("<option value='2'>Easy</option>>");
+    document.write("<option value='7'>Medium</option>");
+    document.write("<option value='10'>Hard</option>");
+    document.write("</select>");
+
+</script>
+
+</body>
+</html>

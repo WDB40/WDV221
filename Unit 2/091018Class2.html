@@ -4,18 +4,6 @@
     <meta charset="UTF-8">
     <title>Class Notes</title>
 
-    <script>
-
-        var firstName = "Wes";
-        var lastName = getLastName();
-
-        function getLastName() {
-
-            return prompt("What is your last name?", "Brown");
-        }
-
-    </script>
-
 </head>
 <body>
 
@@ -37,11 +25,28 @@ Data Types in JavaScript: String, numeric, boolean
 
 -->
 
+<p id="firstName"></p>
+<p id="lastName"></p>
+<p id="fullName"></p>
+
 <script>
 
-    document.write(firstName + " " + lastName);
+    var firstName = "Wes";
+    var lastName = getLastName();
+
+    function getLastName() {
+
+        return prompt("What is your last name?", "Brown");
+    }
+
+    var fullName = firstName + " " + lastName;
+
+    document.getElementById("firstName").innerHTML = firstName;
+    document.getElementById("lastName").innerHTML = lastName;
+    document.getElementById("fullName").innerHTML = fullName;
 
 </script>
+
 
 </body>
 </html>
