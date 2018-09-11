@@ -58,6 +58,9 @@ body {background-color:#FC6;
     <!-- Number 6 Display -->
     <p id="courseNameLen"></p>
 
+    <!-- Number 7 Display -->
+    <p id="courseNameUpper"></p>
+
 </div>
 
 <script>
@@ -85,6 +88,10 @@ body {background-color:#FC6;
     //Number 6
     var courseNameLen = courseName.length;
     document.getElementById("courseNameLen").innerHTML = courseNameLen;
+
+    //Number 7
+    var courseNameUpper = courseName.toUpperCase();
+    document.getElementById("courseNameUpper").innerHTML = courseNameUpper;
 
 </script>
 
