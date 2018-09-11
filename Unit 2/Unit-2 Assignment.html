@@ -8,6 +8,14 @@
 body {background-color:#FC6;
 }
 
+.answers {
+
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
 .highlightTitle	{
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-style:italic;
@@ -15,7 +23,6 @@ body {background-color:#FC6;
 	text-decoration:underline;
 	color:#096;
 }
-
 
 </style>
 </head>
@@ -38,7 +45,7 @@ body {background-color:#FC6;
 <p>7. Display the course name as all uppercase letters.</p>
 <p>8. Using the String Object determine if the course name contains the letters WDV?  Look at the String methods. Does one or more of them look inside the variable for specific content?</p>
 
-<div>
+<div class="answers">
     <!-- Elements for Display for 1 through 8 -->
     <!-- Number 1 Display -->
     <p id="schoolName"></p>
@@ -61,37 +68,45 @@ body {background-color:#FC6;
     <!-- Number 7 Display -->
     <p id="courseNameUpper"></p>
 
+    <!-- Number 8 Display -->
+    <p id="containsWDV"></p>
+
 </div>
 
 <script>
 
     //Number 1
     var schoolName = "DMACC";
-    document.getElementById("schoolName").innerHTML = schoolName;
+    document.getElementById("schoolName").innerHTML = "1." + schoolName;
 
     //Number 2
     var courseName = "WDV221 Intro JavaScript";
-    document.getElementById("courseName").innerHTML = courseName;
+    document.getElementById("courseName").innerHTML = "2. " + courseName;
 
     //Number 3
     var testScore = 100.00;
-    document.getElementById("testScore").innerHTML = testScore;
+    document.getElementById("testScore").innerHTML = "3. " + testScore;
 
     //Number 4
     var courseGrade;
-    document.getElementById("courseGrade").innerHTML = courseGrade;
+    document.getElementById("courseGrade").innerHTML = "4. " + courseGrade;
 
     //Number 5
     var courseComplete = false;
-    document.getElementById("courseComplete").innerHTML = courseComplete;
+    document.getElementById("courseComplete").innerHTML = "5. " + courseComplete;
 
     //Number 6
     var courseNameLen = courseName.length;
-    document.getElementById("courseNameLen").innerHTML = courseNameLen;
+    document.getElementById("courseNameLen").innerHTML = "6. " + courseNameLen;
 
     //Number 7
     var courseNameUpper = courseName.toUpperCase();
-    document.getElementById("courseNameUpper").innerHTML = courseNameUpper;
+    document.getElementById("courseNameUpper").innerHTML = "7. " + courseNameUpper;
+
+    //Number 8
+    var containsWDV = courseName.includes("WDV");
+    document.getElementById("containsWDV").innerHTML = "8. " + containsWDV;
+
 
 </script>
 
