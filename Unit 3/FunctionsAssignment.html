@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Functions</title>
+
+    <script>
+
+        function getName(){
+            return prompt("Enter your name: ", "Wes Brown");
+        }
+
+        function sayHello(name){
+            alert(name);
+        }
+
+        function printHello(name){
+            document.write(name);
+        }
+
+    </script>
+
 </head>
 <body>
+
+<script>
+
+    var name = getName();
+    sayHello(name);
+    printHello(name);
+    printHello(name);
+
+</script>
 
 </body>
 </html>
