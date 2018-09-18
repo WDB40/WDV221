@@ -18,6 +18,12 @@
             document.write(name);
         }
 
+        function characterCount(){
+            var testString = prompt("Enter a string to measure: ", "I bet this one is 21.");
+            testString = testString.length
+            alert(testString);
+        }
+
     </script>
 
 </head>
@@ -31,6 +37,10 @@
     printHello(name);
 
 </script>
+
+<h1><script>printHello(name)</script></h1>
+
+<button onclick="characterCount()">Click This</button>
 
 </body>
 </html>

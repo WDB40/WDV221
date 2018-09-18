@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Ran Wei and Wes Brown -->
+
+    <meta charset="UTF-8">
+    <title>In Class Assignment</title>
+
+    <script>
+
+        var myName = getName();
+        var wins = 0;
+
+        document.getElementById("welcomeStatement").innerHTML = "Welcome, " + name;
+
+        function getName(){
+            return prompt("What is your name?", "John Doe");
+        }
+
+        function returnWins(name, wins) {
+            return name + " has " + wins + " wins!";
+        }
+
+        function returnOption(level, value){
+            return "<option value=" + value + ">" + level + "</option>"
+        }
+
+    </script>
+
+</head>
+<body>
+
+<h1 id="welcomeStatement"></h1>
+<h2>Settings</h2>
+
+<script>
+
+
+    document.getElementById("welcomeStatement").innerHTML = "Welcome, " + name;
+    console.log(name);
+    document.write("<select>");
+    document.write(returnOption("Easy", 2));
+    document.write(returnOption("Regular", 7));
+    document.write(returnOption("Hard", 10));
+    document.write("</select>");
+
+</script>
+
+<button  onclick="alert(returnWins(myName, wins))">Wins</button>
+
+</body>
+</html>
