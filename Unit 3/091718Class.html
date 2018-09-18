@@ -11,6 +11,20 @@
             return name.length;
         }
 
+        function getFirstName(){
+            return prompt("Enter your first name: ", "Wes");
+        }
+
+        function getLastName() {
+            return prompt("Enter your last name: ", "Brown");
+        }
+
+        function formatName(firstName, lastName) {
+            var formattedName = firstName + " " + lastName;
+            console.log(formattedName);
+            return formattedName;
+        }
+
     </script>
 
 </head>
@@ -31,8 +45,24 @@
 
         <script>
 
-            var name = prompt("Please enter your name: ", "John Doe");
+            var name = getFirstName();
             document.getElementById("displayWelcome").innerHTML = "Welcome, " + name +  ". Your name is " + getLength(name) + " characters long.";
+
+        </script>
+
+    </section>
+
+    <section>
+
+        <h4>Multi-Argument Functions</h4>
+
+        <script>
+
+            var firstName = getFirstName();
+            var lastName = getLastName();
+            var fullName = formatName(firstName, lastName);
+
+            document.write(fullName);
 
         </script>
 
