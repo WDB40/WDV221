@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Class 3</title>
+
+    <script>
+
+        function getLength(name) {
+            //alert(name.length);
+            return name.length;
+        }
+
+    </script>
+
 </head>
 <body>
+
+<header>
+    <h1>Work from Class 3 of Introduction to JavaScript</h1>
+</header>
+
+<main>
+
+    <h2>Introduction to Functions in JavaScript</h2>
+
+    <section>
+
+        <h4>Creating a Function and Passing it an Argument</h4>
+        <p id="displayWelcome"></p>
+
+        <script>
+
+            var name = prompt("Please enter your name: ", "John Doe");
+            document.getElementById("displayWelcome").innerHTML = "Welcome, " + name +  ". Your name is " + getLength(name) + " characters long.";
+
+        </script>
+
+    </section>
+
+</main>
 
 </body>
 </html>
