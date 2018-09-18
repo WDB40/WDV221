@@ -20,7 +20,7 @@
         }
 
         function formatName(firstName, lastName) {
-            var formattedName = firstName + " " + lastName;
+            var formattedName = lastName + ", " + firstName;
             console.log(formattedName);
             return formattedName;
         }
@@ -46,7 +46,7 @@
         <script>
 
             var name = getFirstName();
-            document.getElementById("displayWelcome").innerHTML = "Welcome, " + name +  ". Your name is " + getLength(name) + " characters long.";
+            document.getElementById("displayWelcome").innerHTML = "Welcome, " + name +  ". Your first name is " + getLength(name) + " characters long.";
 
         </script>
 
