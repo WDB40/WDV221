@@ -1,8 +1,8 @@
 <!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <title>WDV221 Intro Javascript - Variables and Data Types Assignment</title>
-
 <style>
 
 body {background-color:#FC6;
@@ -16,8 +16,43 @@ body {background-color:#FC6;
 	color:#096;
 }
 
-
 </style>
+    <script>
+
+        //Variable for Number 1
+        var inName = "";
+
+        //Variable for Number 2
+        var emailAddress = "wdbrown@dmacc.edu";
+
+        //Function for Number 3
+        function getName() {
+            inName = prompt("Enter a name: ", "Wes Brown")
+        }
+
+        //Function for Number 4
+        function displayName(){
+            alert(inName);
+        }
+
+        //Function for Number 5
+        function getEmail() {
+            emailAddress = prompt("Enter email address: ", "JohnDoe@site.org");
+        }
+
+        //Function for Number 6
+        function displayEmailName() {
+            var indexOfAtSymbol = emailAddress.indexOf("@");
+            alert(emailAddress.substring(0, indexOfAtSymbol));
+        }
+
+        //Function for Number 7
+        function displayEmailServer() {
+            var indexOfAtSymbol = emailAddress.indexOf("@");
+            alert(emailAddress.substring(indexOfAtSymbol+1));
+        }
+
+    </script>
 </head>
 
 <body>
@@ -45,5 +80,38 @@ body {background-color:#FC6;
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
+
+<main>
+
+    <h3>Answers from Wes Brown</h3>
+
+    <section>
+        <h4>Number 3</h4>
+        <button type="button" onclick="getName()">Get Name</button>
+    </section>
+
+    <section>
+        <h4>Number 4</h4>
+        <button type="button" onclick="displayName()">Display Name</button>
+    </section>
+
+    <section>
+        <h4>Number 5</h4>
+        <button type="button" onclick="getEmail()">Get Email Address</button>
+    </section>
+
+    <section>
+        <h4>Number 6</h4>
+        <button type="button" onclick="displayEmailName()">Display Email Name</button>
+    </section>
+
+    <section>
+        <h4>Number 7</h4>
+        <button type="button" onclick="displayEmailServer()">Display Email Server</button>
+    </section>
+
+</main>
+
 </body>
 </html>

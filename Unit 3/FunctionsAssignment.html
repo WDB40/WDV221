@@ -10,14 +10,17 @@
             return prompt("Enter your name: ", "Wes Brown");
         }
 
-        function sayHello(name){
-            alert(name);
+        //Number 1 Function
+        function sayHello(sayName){
+            alert(sayName);
         }
 
-        function printHello(name){
-            document.write(name);
+        //Number 2 and 3 Function
+        function printHello(printName){
+            document.write(printName);
         }
 
+        //Number 4 Function
         function characterCount(){
             var testString = prompt("Enter a string to measure: ", "I bet this one is 21.");
             testString = testString.length
@@ -31,16 +34,22 @@
 
 <script>
 
-    var name = getName();
-    sayHello(name);
-    printHello(name);
-    printHello(name);
+    var userName = getName();
+
+    <!--Number 1 Call-->
+    sayHello(userName);
+
+    <!--Number 2 Calls-->
+    printHello(userName);
+    printHello(userName);
 
 </script>
 
-<h1><script>printHello(name)</script></h1>
+<!--Number 3 Call-->
+<h1><script>printHello(userName)</script></h1>
 
-<button onclick="characterCount()">Click This</button>
+<!--Number 4 Call-->
+<button onclick="characterCount()">Click This!</button>
 
 </body>
 </html>
