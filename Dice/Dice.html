@@ -26,6 +26,8 @@
             return "<option value=" + value + ">" + level + "</option>"
         }
 
+
+
     </script>
 
 </head>
@@ -34,17 +36,16 @@
 <h1 id="welcomeStatement"></h1>
 <h2>Settings</h2>
 
+<select>
+    <script>
+        document.write(returnOption("Easy", 2));
+        document.write(returnOption("Regular", 7));
+        document.write(returnOption("Hard", 10));
+    </script>
+</select>
+
 <script>
-
-
     document.getElementById("welcomeStatement").innerHTML = "Welcome, " + name;
-    console.log(name);
-    document.write("<select>");
-    document.write(returnOption("Easy", 2));
-    document.write(returnOption("Regular", 7));
-    document.write(returnOption("Hard", 10));
-    document.write("</select>");
-
 </script>
 
 <button  onclick="alert(returnWins(myName, wins))">Wins</button>
