@@ -1,5 +1,5 @@
-function completeProblem1(){
 
+function completeProblem1(){
     document.getElementById("problem1").innerHTML = "Problem 1 complete."
 }
 
@@ -16,5 +16,5 @@ function completeProblem4(){
 }
 
 function completeProblem5(){
-    alert("Did this work?")
+    document.getElementById("problem5").innerHTML = "The body has loaded! Problem 5 complete."
 }
