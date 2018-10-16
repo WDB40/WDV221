@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>WDV221 Intro Javascript - Operators and Text Fields Assignment</title>
+
+    <script src="Unit%206%20Assignment%20JavaScript.js" type="text/javascript"></script>
+
+    <style>
+
+        body {background-color:#ADD8E6;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h2>WDV221 Intro Javascript</h2>
+    <h3>Project 3 - Operators and Text Fields - Assignment</h3>
+</header>
+
+<main>
+
+    <section>
+        <p>Please complete the following exercises on this page. When complete post this page to your server. Make a link in your WDV221 homework  page for this assignment. </p>
+        <p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+        <p>Using Blackboard submit this  Assignment.</p>
+    </section>
+
+    <section>
+        <h3>Instructions</h3>
+        <p>Use the form fields for the input values. For each of the following exercises create a function what will be activated by the button.  </p>
+    </section>
+
+    <section>
+        <form name="form1" method="post" action="">
+            <p>
+                <label>Enter a number for Value 1: <input type="text" id="value1"/></label>
+            </p>
+
+            <p>
+                <label>Enter a number for Value 2:<input type="text" id="value2"/></label>
+            </p>
+
+            <p>
+                1.<input type="button" value="Display Value 1" onclick="printValidNumberToElement('value1', 'problem1')"/>
+                <label>Display the value you entered for value1: <input type="text" id="problem1"/></label>
+            </p>
+
+            <p>
+                2. <input type="button" value="Display Value 2" onclick="printValidNumberToElement('value2', 'problem2')"/>
+                <label>Display the value you entered for value2: <input type="text" id="problem2"/></label>
+            </p>
+
+            <p>
+                3. <input type="button" value="Multiply" onclick="displayMultiplyTwoElements('value1', 'value2', 'problem3')"/>
+                <label>Display the value of value1 * value2: <input type="text" id="problem3"/></label>
+            </p>
+
+            <p>
+                4. <input type="button" value="Add" onclick="displayAdditionTwoElements('value1', 'value2', 'problem4')"/>
+                <label>Display the results of value1 + value2 in the following text field. <input type="text" id="problem4"/></label>
+            </p>
+
+            <p>
+                5.<input type="button" value="Increment count" onclick="addOneToElement('problem5')"/>
+                <label>Use the increment operator to add 1 to count and display the new value of count. <input type="text" id="problem5"/></label>
+            </p>
+
+            <p>
+                <input type="reset" name="Reset" id="button" value="Reset">
+            </p>
+
+        </form>
+
+    </section>
+
+</main>
+
+</body>
+</html>
