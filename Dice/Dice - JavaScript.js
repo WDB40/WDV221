@@ -1,9 +1,7 @@
 //---Global Vars---
-var PlayerName;
+var PlayerName = "New Player";
 var Wins = 0;
 //------------
-
-PlayerName = prompt("Please enter your name.", "John Doe");
 
 function getWins()
 {
