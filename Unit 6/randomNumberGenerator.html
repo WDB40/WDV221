@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number</title>
+    <script>
+
+        function getRandomNumber(max) {
+
+            return Math.random() * max;
+        }
+
+        function printRandomNumber(max, inElement){
+
+            document.getElementById(inElement).innerHTML = getRandomNumber(max);
+        }
+
+    </script>
+</head>
+<body>
+
+<main>
+    <section>
+
+        <button onclick="printRandomNumber(10, 'randomNumber')">Print Random Number</button>
+
+        <p id="randomNumber"></p>
+
+    </section>
+</main>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 function invalidNumber(inElement){
-    return isNaN(document.getElementById(inElement).value) || document.getElementById(inElement).value.length === 0;
+    return isNaN(document.getElementById(inElement).value) || isEmptyElement(inElement);
 }
 
 function returnAsNumber(inElement){
@@ -46,9 +46,16 @@ function printValidNumberToElement(inElement, displayElement){
     document.getElementById(displayElement).value = getIDValueAsNumber(inElement);
 }
 
+function isEmptyElement(inElement){
+    return document.getElementById(inElement).value.length === 0
+}
+
 function addOneToElement(inElement){
 
-    if(!invalidNumber(inElement)){
+    if(isEmptyElement(inElement)){
+        document.getElementById(inElement).value = 1;
+    }
+    else if(!invalidNumber(inElement)){
         document.getElementById(inElement).value = returnAsNumber(inElement) + 1;
     }
 
